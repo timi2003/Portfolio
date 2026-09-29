@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="blueprint">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Femi Oluwafemi | Full-stack developer for business systems</title>
+<meta name="description" content="Kolawole Oluwafemi (Femi): full-stack developer in Nigeria building software around how your business actually works.">
+<meta property="og:title" content="Femi Oluwafemi | Full-stack developer">
+<meta property="og:description" content="Software built around how your business actually works.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Femi Oluwafemi","founder":{"@type":"Person","name":"Kolawole Oluwafemi","email":"kolawolefemi2003@gmail.com","telephone":"+2349019371301","sameAs":["https://github.com/timi2003"]},"areaServed":"Worldwide","serviceType":"Full-stack software development"}</script>
+<style>
+:root{--bg:#050505;--bg2:#0d0c09;--fg:#efe7d2;--mut:#9a927c;--gold:#d4a740;--gold2:#8f6b17;--teal:#3fa796;--line:rgba(212,167,64,.22);--card:rgba(20,17,10,.72);--grid:rgba(212,167,64,.055);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="clean"]{--bg:#f6f2e8;--bg2:#ebe5d4;--fg:#1a1608;--mut:#6b6247;--gold:#8f6b17;--gold2:#6e510e;--teal:#1f7a6a;--line:rgba(110,81,14,.25);--card:rgba(255,255,255,.7);--grid:transparent}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]):not([data-theme="clean"]){--bg:#050505}}
+html{scroll-behavior:smooth;scroll-padding-top:70px;height:auto}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 'Bricolage Grotesque',system-ui,sans-serif;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:44px 44px;overflow-x:hidden}
+a{color:inherit}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:var(--mut)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.rail{position:fixed;left:14px;top:0;bottom:0;width:1px;background:var(--line);z-index:5}
+.rail i{display:block;width:1px;height:0;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+header{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:18px;padding:12px 28px 12px 40px;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header b{font-weight:800;font-size:19px;letter-spacing:.02em;margin-right:auto}
+header b span{color:var(--gold)}
+nav{display:flex;gap:18px}nav a{text-decoration:none;color:var(--mut);font-size:14px}nav a:hover{color:var(--gold)}
+.tg{border:1px solid var(--line);background:none;color:var(--fg);padding:6px 12px;border-radius:99px;cursor:pointer;font:inherit;font-size:13px}
+.tg:hover{border-color:var(--gold)}
+@media(max-width:820px){nav{display:none}header{padding-left:34px}}
+main{padding-left:14px}
+section{max-width:1100px;margin:0 auto;padding:96px 28px 40px;position:relative}
+section h2{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:0 0 14px;font-weight:800;letter-spacing:-.02em;display:flex;align-items:center;gap:14px}
+section h2::before{content:'';flex:none;width:11px;height:11px;border:1.5px solid var(--gold);background:var(--bg);margin-left:-34px;transition:.4s;position:relative;z-index:6}
+section.on h2::before{background:var(--gold);box-shadow:0 0 16px var(--gold)}
+.lead{max-width:60ch;color:var(--mut);margin:0 0 36px}
+#hero{min-height:calc(100vh - 60px);display:flex;flex-direction:column;justify-content:center;padding-top:60px}
+#cv{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hero-in{position:relative;z-index:1;max-width:760px;pointer-events:none}
+.hero-in *{pointer-events:auto}
+h1{font-size:clamp(40px,8vw,88px);line-height:.98;letter-spacing:-.035em;margin:12px 0 22px;font-weight:800}
+h1 em{font-style:normal;background:linear-gradient(100deg,var(--gold),#f3d88a 45%,var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{font-size:19px;color:var(--mut);max-width:52ch;margin-bottom:30px}
+.btn{display:inline-block;padding:13px 24px;border-radius:4px;border:1px solid var(--gold);text-decoration:none;font-weight:700;cursor:pointer;background:none;color:var(--fg);font:inherit;font-weight:700;transition:.25s}
+.btn.p{background:linear-gradient(100deg,var(--gold),var(--gold2));color:#0a0800;border-color:transparent}
+.btn:hover{box-shadow:0 0 24px rgba(212,167,64,.35);transform:translateY(-2px)}
+.row{display:flex;gap:14px;flex-wrap:wrap}
+.stats{display:flex;gap:30px;margin-top:38px;flex-wrap:wrap}
+/* map */
+.map{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:stretch}
+@media(max-width:860px){.map{grid-template-columns:1fr}}
+.map svg{width:100%;height:auto;border:1px solid var(--line);background:var(--card)}
+.nd{cursor:pointer}.nd rect{fill:var(--bg);stroke:var(--line);stroke-width:1.2;transition:.25s}
+.nd text{fill:var(--fg);font:500 12px 'IBM Plex Mono',monospace;text-anchor:middle}
+.nd:hover rect,.nd:focus rect,.nd.act rect{stroke:var(--gold);fill:rgba(212,167,64,.13)}
+.nd:focus{outline:none}
+.wire{stroke:var(--gold);stroke-width:1;stroke-dasharray:4 6;opacity:.55;animation:dash 2s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-20}}
+.panel,.card{border:1px solid var(--line);background:var(--card);padding:24px;border-radius:6px}
+.panel h3,.card h3{margin:0 0 8px;font-size:22px}
+.tag{display:inline-block;border:1px solid var(--line);padding:2px 10px;border-radius:99px;margin:4px 6px 0 0;font-size:12.5px;color:var(--gold)}
+/* builder */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 24px}
+.chip{border:1px solid var(--line);background:none;color:var(--fg);padding:9px 16px;border-radius:4px;cursor:pointer;font:inherit;font-size:15px;transition:.2s}
+.chip:hover{border-color:var(--gold)}
+.chip[aria-pressed="true"]{background:var(--gold);color:#0a0800;border-color:var(--gold);font-weight:700}
+.out{border-left:2px solid var(--gold);padding:6px 0 6px 22px;margin-top:8px;white-space:pre-line;min-height:60px}
+/* work */
+.case{border:1px solid var(--line);background:var(--card);margin-bottom:14px;border-radius:6px}
+.case summary{padding:20px 24px;cursor:pointer;display:flex;justify-content:space-between;gap:16px;list-style:none;font-size:22px;font-weight:700}
+.case summary::-webkit-details-marker{display:none}
+.case summary::after{content:'+';color:var(--gold);font-size:26px;transition:.3s}
+.case[open] summary::after{transform:rotate(45deg)}
+.case .bd{padding:0 24px 24px;display:grid;grid-template-columns:110px 1fr;gap:10px 18px}
+@media(max-width:640px){.case .bd{grid-template-columns:1fr;gap:2px}.case .bd .mono{margin-top:12px}}
+.ph{color:var(--gold);font-family:'IBM Plex Mono',monospace;font-size:14px}
+.pv{grid-column:1/-1;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--bg2);margin:6px 0 14px}
+.pv .tb{display:flex;gap:6px;align-items:center;padding:9px 12px;border-bottom:1px solid var(--line)}
+.pv .tb i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.pv .tb span{margin-left:10px;font:12px 'IBM Plex Mono',monospace;color:var(--mut)}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:6px 0}
+.flow span{border:1px solid var(--line);padding:5px 10px;font:13px 'IBM Plex Mono',monospace;border-radius:3px;transition:.3s}
+.flow span.hot{border-color:var(--gold);background:rgba(212,167,64,.18);box-shadow:0 0 14px rgba(212,167,64,.4)}
+.flow u{text-decoration:none;color:var(--gold2)}
+/* marquee */
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:40px 0;margin:30px 0 0;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq div{display:flex;align-items:center;width:max-content;animation:mq 32s linear infinite}
+.mq div>*{flex:none;margin-right:140px}
+.mq:hover div{animation-play-state:paused}
+.mq span{font-weight:800;font-size:30px;letter-spacing:-.01em;transition:.3s;white-space:nowrap;color:var(--fg)}
+.mq span:hover{color:var(--gold)}
+.mq img{height:64px;width:auto;display:block;transition:.3s}.mq img:hover{transform:scale(1.06)}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.mq{mask-image:none}.mq div{flex-wrap:wrap;width:auto;justify-content:center;gap:30px 80px;padding:0 28px}.mq div>*{margin-right:0}}
+/* team, process, cred */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.steps{position:relative;display:grid;gap:26px;padding-left:34px}
+.steps::before{content:'';position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.steps .fill{position:absolute;left:5px;top:6px;width:1px;height:0;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+.step{position:relative}.step::before{content:'';position:absolute;left:-34px;top:8px;width:11px;height:11px;background:var(--bg);border:1.5px solid var(--line);transition:.4s}
+.step.on::before{background:var(--gold);border-color:var(--gold)}
+.step h3{margin:0}
+form{display:grid;gap:14px;max-width:620px}
+input,textarea{width:100%;background:var(--card);border:1px solid var(--line);color:var(--fg);padding:13px 14px;font:inherit;border-radius:4px}
+input:focus,textarea:focus{border-color:var(--gold);outline:none}
+label{display:grid;gap:6px}
+footer{padding:50px 28px 80px;text-align:center}
+.no-motion #cv{display:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="rail" aria-hidden="true"><i id="rail"></i></div>
+<header>
+<b>femi<span>.</span>dev</b>
+<nav aria-label="Main"><a href="#map">Architecture</a><a href="#brief">Brief</a><a href="#work">Work</a><a href="#team">Team</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+<button class="tg" id="tg" aria-label="Switch theme">Blueprint</button>
+</header>
+<main>
+<section id="hero" class="on">
+<canvas id="cv" aria-hidden="true"></canvas>
+<div class="hero-in">
+<span class="mono" style="font-size:18px;color:var(--fg)">Hi, I'm Femi. I build custom software for growing businesses.</span>
+<h1>Software that fits <em>your business,</em> not the other way round.</h1>
+<p class="sub">Websites, web and mobile apps, online stores, automation and AI, planned around how you actually operate, so you save time, avoid rework and grow without the chaos.</p>
+<div class="row"><a class="btn p" href="#brief">Start a project</a><a class="btn" href="#work">See the work</a></div>
+<div class="stats mono"><span><b style="color:var(--gold);font-size:22px" id="yrs">4</b> years building software</span><span>Specialists on call: 3D, data, AI, automation</span></div>
+</div>
+</section>
+
+<section id="map">
+<h2>What each layer does for you</h2>
+<p class="lead">Pick a layer. Each one is explained in business terms, with the projects where it was used.</p>
+<div class="map"><svg id="svg" viewBox="0 0 640 380" role="group" aria-label="Architecture map"></svg><div class="panel" id="pn" aria-live="polite"></div></div>
+</section>
+
+<section id="brief">
+<h2>Build your brief</h2>
+<p class="lead">Answer three questions and get a suggested approach you can send straight to Femi. No prices are quoted here; final scope and cost come after a conversation.</p>
+<div id="bb">
+<div class="mono">What do you need? (choose any)</div><div class="chips" id="c-need"></div>
+<div class="mono">Budget range</div><div class="chips" id="c-bud"></div>
+<div class="mono">Timeline</div><div class="chips" id="c-time"></div>
+<div class="mono">Suggested approach</div><div class="out" id="out">Choose at least one need to see a suggestion.</div>
+<div class="row" style="margin-top:22px"><button class="btn p" id="send" disabled>Send this brief to Femi</button></div>
+</div>
+</section>
+
+<section id="work">
+<h2>Selected work</h2>
+<p class="lead">Five projects, each with the problem, the architecture and the outcome.</p>
+<div id="cases"></div>
+</section>
+
+<section id="partners" style="padding-bottom:0">
+<h2>Businesses I've worked and partnered with</h2>
+<p class="lead">Companies and organisations I've built for, led projects with, or trained alongside.</p>
+</section>
+<div class="mq" aria-label="Businesses worked and partnered with"><div id="mq"></div></div>
+
+<section id="team">
+<h2>The team behind the build</h2>
+<p class="lead">Femi leads every project. Specialists join only when the work needs them, so you never pay for a team you don't use.</p>
+<div class="grid" id="tm"></div>
+</section>
+
+<section id="process">
+<h2>How I work</h2>
+<p class="lead">You get a short written report every day and a longer one each week, plus a video walkthrough at each milestone, so you always see what changed.</p>
+<div class="steps" id="st"><div class="fill" id="fill"></div></div>
+</section>
+
+<section id="creds">
+<h2>Credentials</h2>
+<div class="grid">
+<div class="card"><h3>Education</h3>B.Tech Information Technology, Federal University of Technology Akure (FUTA)</div>
+<div class="card"><h3>Certifications</h3>CCNA 1 (Cisco Networking Academy)<br>ALX Frontend Developer<br>ALX Professional Foundation</div>
+<div class="card"><h3>Leadership</h3>General Secretary, ACOMS<br>Team Lead, FUTA Entrepreneurship Scheme</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Tell me what you're building</h2>
+<p class="lead">Femi replies personally. Use the form, or reach out directly.</p>
+<form id="f">
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input name="email" type="email" required autocomplete="email"></label>
+<label>Message<textarea name="message" rows="7" required></textarea></label>
+<label class="mono" style="display:flex;gap:10px;align-items:center"><input type="checkbox" id="inc" style="width:auto" checked> Include my brief from the builder</label>
+<div class="row"><button class="btn p" type="submit">Send message</button>
+<a class="btn" id="wa" href="#">WhatsApp</a><a class="btn" href="mailto:kolawolefemi2003@gmail.com">Email</a><a class="btn" id="cv-link" href="#">Download resume</a></div>
+<div id="fs" class="mono" role="status"></div>
+</form>
+<p class="mono" style="margin-top:28px"><a href="https://github.com/timi2003">github.com/timi2003</a> &nbsp; +234 901 937 1301 &nbsp; <span class="ph"><a href="https://linkedin.com/in/kolawole-oluwafemi33">Linkedin</a></span></p>
+</section>
+</main>
+<footer class="mono">Kolawole Oluwafemi. Built as a system, deployed as a page.</footer>
+
+<script>
+/* ===== CONFIG: edit content here ===== */
+const CONFIG={
+ years:3, // edit to a number you can defend
+ email:'kolawolefemi2003@gmail.com',
+ whatsapp:'2349019371301', // digits only, with country code
+ resume:'resume.pdf', // put resume.pdf in the same folder as index.html
+ formEndpoint:'', // e.g. 'https://formspree.io/f/xxxx'. Empty = opens the visitor's email app instead
+ analytics:false, // privacy-friendly analytics, off by default
+ layers:[
+  {id:'Frontend',x:110,y:70,what:'The screens your customers and staff actually touch. Fast, clear and usable on a phone.',used:['VitaConnect','Speak French Fast','Kobit / EFair','BGYCC']},
+  {id:'Backend',x:530,y:70,what:'The rules of your business in code: who can do what, how orders, payments and records behave.',used:['VitaConnect','Speak French Fast','Kobit / EFair']},
+  {id:'Database',x:560,y:190,what:'Where your records live safely, structured so reports and growth do not slow it down.',used:['VitaConnect (Supabase, PostgreSQL, Prisma)']},
+  {id:'Automation',x:470,y:315,what:'Software that does repetitive work for you, such as collecting data, syncing systems and sending updates.',used:['Data extraction and automation']},
+  {id:'Data',x:170,y:315,what:'Turns raw records into numbers you can decide with. Clean datasets, dashboards and reports.',used:['Data extraction and automation','Specialist: data analyst']},
+  {id:'AI',x:80,y:190,what:'Adds practical intelligence where it earns its place, such as smart alerts or assisted decisions.',used:['VitaConnect (fuzzy-inference alerts)','Specialist: AI engineer']},
+  {id:'3D',x:320,y:340,what:'Product visuals and animation that make an idea easy to understand and remember.',used:['Specialist: 3D animation artist']}
+ ],
+ needs:[
+  {id:'Web app',stack:'Next.js, React, TypeScript, Tailwind, Node.js, PostgreSQL',team:[],ph:'a clickable prototype, then the core features, then hardening'},
+  {id:'Mobile app',stack:'React and Next.js PWA, packaged for Android when native access is needed',team:[],ph:'core screens first, then device features, then store release'},
+  {id:'E-commerce',stack:'Next.js, Tailwind, Express.js, Supabase or PostgreSQL',team:[],ph:'catalogue and checkout first, then admin tools, then optimisation'},
+  {id:'Automation',stack:'Node.js, Puppeteer, Cheerio, Axios, scheduled jobs',team:['Automation engineer'],ph:'map the manual process, automate the largest time sink first, then monitoring'},
+  {id:'Data / analytics',stack:'Python, PostgreSQL, clean JSON/CSV pipelines, dashboards',team:['Data analyst'],ph:'define the questions, build the pipeline, then reports'},
+  {id:'AI feature',stack:'TypeScript or Python services around an AI model of the right size',team:['AI engineer'],ph:'test the idea on real data before wiring it into the product'},
+  {id:'3D / animation',stack:'Three.js or pre-rendered animation, optimised for the web',team:['3D animation artist'],ph:'concept, model and motion, then web-optimised delivery'}
+ ],
+ budgets:['Small scope','Mid-size build','Large or ongoing','Not sure yet'], // [EDIT: add ranges, e.g. 'Small scope ($X to $Y)']
+ timelines:['Within 2 weeks','1 to 2 months','3+ months','Flexible'],
+ cases:[
+  {n:'VitaConnect',t:'IoT-enabled remote patient monitoring platform (final-year project)',
+   p:'Doctors need to see patient health data from wearables without patients logging it by hand, including where connectivity is poor.',
+   a:'Next.js web app with Supabase/PostgreSQL and Prisma, NextAuth and Cloudflare R2. An installable PWA packaged for Android reads Health Connect through a native JavaScript bridge. Wearable and health APIs are integrated, including Garmin OAuth. Fuzzy-inference logic raises alerts, and cache-first sync keeps it usable offline.',
+   s:'Next.js, React, Tailwind, Supabase, PostgreSQL, Prisma, NextAuth, Cloudflare R2, PWA, Health Connect',
+   r:'Tested with six participants; average SUS score about 73.7. Live at temed.vercel.app.',l:'https://temed.vercel.app',flow:['Wearable','Phone','Health Connect','Bridge','Database','Doctor portal']},
+  {n:'Speak French Fast Academy',t:'Full-stack French learning platform',
+   p:'Learners needed structured exam practice and a pace that keeps them coming back.',
+   a:'Exam-simulation modules for listening, reading, speaking and writing, with a day-unlock progression system, AI grading and a mobile-responsive interface. Daily and weekly progress reports with video walkthroughs kept the client informed.',
+   s:'Next.js, Tailwind, Supabase/PostgreSQL, Resend, OpenAI',r:'',l:'https://sffacademy.com'},
+  {n:'Kobit food-delivery e-commerce',t:'Storefront for Highbish Technologies',
+   p:'A storefront that feels fast and lets shoppers interact with products.',
+   a:'Storefront on Next.js, Tailwind and Express.js with UI optimisation and interactive components. Also handled frontend and backend integration on the EFair project.',
+   s:'Next.js, Tailwind CSS, Express.js',r:'',l:'https://kobit-food-de.vercel.app/'},
+  {n:'BGYCC mobile app',t:'Community mobile app, project management role',
+   p:'Taking a community app from concept to a working MVP with a coordinated team.',
+   a:'Led delivery: coordinated the team, validated each module before integration, and reported weekly on progress and risks.',
+   s:'Notion, Google Drive, ClickUp, Google Docs',r:'MVP delivered.',l:''},
+  {n:'Data extraction and automation',t:'Freelance scraping and datasets',
+   p:'Lead generation and market research depended on data trapped inside websites.',
+   a:'Scrapers that handle rate limits and site changes, delivering clean JSON and CSV datasets ready for use.',
+   s:'Puppeteer, Cheerio, Axios, Node.js',r:'Clean datasets delivered for lead generation and market research.',l:''}
+ ],
+ logos:[{n:'Highbish Technologies',img:'logos/highbish.jpg'},{n:'Dluxfly',img:'logos/dluxfly.jpg'},{n:'Speak French Fast',img:'logos/sff.jpg'},{n:'BGYCC',img:'logos/bgycc.png'}], // add img:'logos/file.svg' to any item to use a logo
+ team:[
+  {name:'Liberty James',role:'3D animation artist',cap:'Product visuals and motion for the web.'},
+  {name:'Anifowose Oluwaferanmi',role:'Data analyst',cap:'Cleans data and turns it into decisions.'},
+  {name:'Kolawole Oluwafemi',role:'AI engineer',cap:'Adds practical AI features where they help.'},
+  {name:'Lawal Emmanuel',role:'Automation engineer',cap:'Removes repetitive manual work.'}
+ ],
+ steps:[
+  ['Discover','We map your business, users and constraints, and agree what success looks like.'],
+  ['Design the architecture','I plan the system for speed, growth and cost before writing features.'],
+  ['Build in milestones','Small releases, each validated. Daily updates, weekly reports, video walkthroughs.'],
+  ['Launch and support','Deployment, handover and continued care so it keeps working.']
+ ]
+};
+const $=s=>document.querySelector(s),el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!==undefined)e.innerHTML=h;return e};
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+$('#yrs').textContent=CONFIG.years;
+/* theme */
+const tg=$('#tg'),root=document.documentElement;
+try{const t=localStorage.getItem('th');if(t){root.dataset.theme=t;tg.textContent=t==='clean'?'Clean':'Blueprint'}}catch(e){}
+tg.onclick=()=>{const c=root.dataset.theme==='clean'?'blueprint':'clean';root.dataset.theme=c;tg.textContent=c==='clean'?'Clean':'Blueprint';try{localStorage.setItem('th',c)}catch(e){}};
+/* hero canvas */
+(()=>{const cv=$('#cv'),x=cv.getContext('2d');let W,H,N=[],m={x:-999,y:-999},run=true,dpr=Math.min(devicePixelRatio||1,2);
+const lowPower=(navigator.hardwareConcurrency||4)<=2;
+const rs=()=>{const r=cv.parentElement.getBoundingClientRect();W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);const n=Math.round(Math.min(60,W*H/16000));N=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35}))};
+const gold=()=>getComputedStyle(root).getPropertyValue('--gold').trim();
+const draw=()=>{x.clearRect(0,0,W,H);const g=gold();x.fillStyle=g;x.strokeStyle=g;
+for(const a of N){if(!reduce&&!lowPower){a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1;const dx=m.x-a.x,dy=m.y-a.y,d=Math.hypot(dx,dy);if(d<160){a.x+=dx*.012;a.y+=dy*.012}}
+x.globalAlpha=.8;x.beginPath();x.arc(a.x,a.y,1.8,0,7);x.fill()}
+for(let i=0;i<N.length;i++)for(let j=i+1;j<N.length;j++){const a=N[i],b=N[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<130){x.globalAlpha=(1-d/130)*.35;x.lineWidth=.8;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}
+for(const a of N){const d=Math.hypot(m.x-a.x,m.y-a.y);if(d<180){x.globalAlpha=(1-d/180)*.9;x.lineWidth=1;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(m.x,m.y);x.stroke()}}
+x.globalAlpha=1};
+const loop=()=>{if(run)draw();if(!reduce&&!lowPower)requestAnimationFrame(loop)};
+rs();addEventListener('resize',rs);
+cv.parentElement.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});
+cv.parentElement.addEventListener('pointerleave',()=>{m.x=m.y=-999});
+new IntersectionObserver(e=>{run=e[0].isIntersecting}).observe(cv);
+draw();if(!reduce&&!lowPower)loop();else document.body.classList.add('static')})();
+/* architecture map */
+(()=>{const svg=$('#svg'),pn=$('#pn'),NS='http://www.w3.org/2000/svg';const cx=320,cy=190;
+let h='';CONFIG.layers.forEach(l=>h+=`<line class="wire" x1="${cx}" y1="${cy}" x2="${l.x}" y2="${l.y}"/>`);
+h+=`<rect x="${cx-58}" y="${cy-22}" width="116" height="44" fill="none" stroke="var(--gold)" stroke-width="1.5"/><text x="${cx}" y="${cy+5}" text-anchor="middle" style="fill:var(--gold);font:500 13px 'IBM Plex Mono',monospace">Your business</text>`;
+CONFIG.layers.forEach((l,i)=>h+=`<g class="nd" tabindex="0" role="button" aria-label="${l.id} layer" data-i="${i}"><rect x="${l.x-46}" y="${l.y-17}" width="92" height="34" rx="2"/><text x="${l.x}" y="${l.y+4}">${l.id}</text></g>`);
+svg.innerHTML=h;
+const show=i=>{const l=CONFIG.layers[i];svg.querySelectorAll('.nd').forEach((n,j)=>n.classList.toggle('act',j===i));pn.innerHTML=`<span class="mono">Layer</span><h3>${l.id}</h3><p>${l.what}</p><span class="mono">Used in</span><div>${l.used.map(u=>`<span class="tag">${u}</span>`).join('')}</div>`};
+svg.querySelectorAll('.nd').forEach(n=>{const i=+n.dataset.i;n.onmouseenter=n.onfocus=n.onclick=()=>show(i);n.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();show(i)}}});
+show(0)})();
+/* brief builder */
+const B={need:new Set(),bud:'',time:''};let briefText='';
+(()=>{const mk=(id,arr,multi,key)=>{const w=$(id);arr.forEach(v=>{const b=el('button','chip',v);b.type='button';b.setAttribute('aria-pressed','false');b.onclick=()=>{if(multi){B.need.has(v)?B.need.delete(v):B.need.add(v);b.setAttribute('aria-pressed',B.need.has(v))}else{B[key]=v;w.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed',c===b))}upd()};w.appendChild(b)})};
+mk('#c-need',CONFIG.needs.map(n=>n.id),true);mk('#c-bud',CONFIG.budgets,false,'bud');mk('#c-time',CONFIG.timelines,false,'time');
+const upd=()=>{const sel=CONFIG.needs.filter(n=>B.need.has(n.id));$('#send').disabled=!sel.length;if(!sel.length){briefText='';$('#out').textContent='Choose at least one need to see a suggestion.';return}
+const team=[...new Set(sel.flatMap(n=>n.team))];
+briefText=`Needs: ${sel.map(n=>n.id).join(', ')}\nBudget: ${B.bud||'not set'}\nTimeline: ${B.time||'not set'}\n\nSuggested stack: ${[...new Set(sel.map(n=>n.stack))].join('; ')}\nTeam: Femi (lead)${team.length?', plus '+team.join(', '):''}\nPhases:\n1. Discover: confirm goals, users and constraints\n2. Architecture: design the system before features\n${sel.map((n,i)=>`${i+3}. ${n.id}: ${n.ph}`).join('\n')}\n${sel.length+3}. Launch and support`;
+$('#out').textContent=briefText};
+$('#send').onclick=()=>{const m=$('#f [name=message]');m.value=`Hi Femi, here is my project brief:\n\n${briefText}\n\n`;$('#inc').checked=true;$('#contact').scrollIntoView({behavior:reduce?'auto':'smooth'});m.focus()}})();
+/* case studies */
+(()=>{const w=$('#cases');
+const pv=c=>c.shot?`<div class="pv"><div class="tb"><i></i><i></i><i></i><span>${c.n}</span></div><img src="${c.shot}" alt="${c.n} screenshot" loading="lazy"></div>`:'';
+CONFIG.cases.forEach((c,i)=>{const d=el('details','case');d.open=i===0;const f=c.flow?`<div class="mono">Data flow</div><div class="flow" data-flow>${c.flow.map(s=>`<span>${s}</span>`).join('<u>&rarr;</u>')}</div>`:'';
+const lk=/^http/.test(c.l)?`<a href="${c.l}" target="_blank" rel="noopener">${c.l.replace('https://','')}</a>`:`<span class="ph">${c.l}</span>`;
+const hl=t=>t.replace(/\[[^\]]+\]/g,m=>`<span class="ph">${m}</span>`);
+d.innerHTML=`<summary><span>${c.n}<br><span class="mono">${c.t}</span></span></summary><div class="bd">${pv(c,i)}<div class="mono">Problem</div><div>${c.p}</div><div class="mono">Approach</div><div>${c.a}</div><div class="mono">Stack</div><div>${hl(c.s)}</div>${c.r?`<div class="mono">Result</div><div>${hl(c.r)}</div>`:''}${c.l?`<div class="mono">Link</div><div>${lk}</div>`:''}${f?'<div class="mono">Data flow</div><div class="flow" data-flow>'+c.flow.map(s=>`<span>${s}</span>`).join('<u>&rarr;</u>')+'</div>':''}</div>`;w.appendChild(d)});
+if(!reduce){let k=0;setInterval(()=>{const sp=document.querySelectorAll('[data-flow] span');sp.forEach((s,i)=>s.classList.toggle('hot',i===k));k=(k+1)%(sp.length||1)},700)}})();
+/* marquee, team, steps */
+(()=>{const it=CONFIG.logos.map(l=>l.img?`<img src="${l.img}" alt="${l.n}">`:`<span>${l.n}</span>`).join('');$('#mq').innerHTML=reduce?it:it+it;
+$('#tm').innerHTML=CONFIG.team.map(t=>`<div class="card"><h3><span class="ph">${t.name}</span></h3><div class="mono">${t.role}</div><p>${t.cap}</p></div>`).join('');
+const st=$('#st');CONFIG.steps.forEach((s,i)=>st.appendChild(el('div','step',`<h3>${s[0]}</h3><p style="margin:4px 0 0;color:var(--mut)">${s[1]}</p>`)))})();
+/* scroll: rail, section nodes, timeline */
+(()=>{const rail=$('#rail'),fill=$('#fill'),steps=[...document.querySelectorAll('.step')];
+const on=()=>{const h=document.documentElement;rail.style.height=(scrollY/(h.scrollHeight-innerHeight||1)*100)+'%';
+const r=$('#st').getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight*.7-r.top)/r.height));fill.style.height=p*(r.height-12)+'px';steps.forEach((s,i)=>s.classList.toggle('on',p>=i/steps.length+.02))};
+addEventListener('scroll',on,{passive:true});on();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{rootMargin:'0px 0px -50% 0px'});document.querySelectorAll('section').forEach(s=>io.observe(s))})();
+/* contact */
+(()=>{const f=$('#f'),fs=$('#fs');$('#wa').href=`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent('Hi Femi, I found your portfolio and would like to talk about a project.')}`;$('#cv-link').href=CONFIG.resume;
+f.onsubmit=async e=>{e.preventDefault();const d=Object.fromEntries(new FormData(f));if($('#inc').checked&&briefText&&!d.message.includes('Suggested stack'))d.message+='\n\n--- Brief ---\n'+briefText;
+if(CONFIG.formEndpoint){try{const r=await fetch(CONFIG.formEndpoint,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)});if(!r.ok)throw 0;fs.textContent='Sent. Femi will reply by email soon.';f.reset()}catch(x){fs.textContent='Could not send. Please use the Email or WhatsApp button instead.'}}
+else{location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent('Project enquiry from '+d.name)}&body=${encodeURIComponent(d.message+'\n\nFrom: '+d.name+' ('+d.email+')')}`;fs.textContent='Opening your email app to send this message.'}}})();
+/* analytics hook (off by default) */
+if(CONFIG.analytics){const s=document.createElement('script');s.defer=true;s.dataset.domain=location.hostname;s.src='https://cdn.jsdelivr.net/npm/plausible-tracker';/* [ADD analytics provider] */}
+</script>
+</body>
+</html>
